@@ -1,0 +1,318 @@
+body,
+html {
+  -webkit-font-smoothing: antialised;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  height: 100%;
+  width: 100%;
+  line-height: 1.42857;
+  min-width: 320px;
+  position: relative;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  background-image: url(../img/bg.png);
+  margin-bottom: 35px;
+}
+
+.left_bd {
+  background-image: url(../img/left_bd.png);
+  width: 17px;
+  height: 100%;
+  background-repeat: repeat-y;
+  position: absolute;
+  z-index: 2;
+}
+
+.right_bg {
+  background-image: url(../img/right_bd.png);
+  width: 17px;
+  height: 100%;
+  background-repeat: repeat-y;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.top_bd {
+  background-image: url(../img/top_bd.png);
+  background-repeat: repeat-x;
+  height: 17px;
+  margin: 5px 15px 0 14px;
+}
+
+.t_l_angle {
+  background-image: url(../img/top_left_angle.png);
+  width: 21px;
+  height: 31px;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  z-index: 2;
+}
+
+.t_r_angle {
+  background-image: url(../img/top_right_angle.png);
+  width: 21px;
+  height: 33px;
+  position: absolute;
+  right: -3px;
+  top: -2px;
+}
+
+.top_lepn {
+  background-image: url(../img/top_lepn.png);
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  margin-left: -36px;
+  top: -3px;
+}
+
+.b_l_angle {
+  background-image: url(../img/bottom_left_angle.png);
+  width: 21px;
+  height: 42px;
+  position: absolute;
+  bottom: -22px;
+  left: -3px;
+  z-index: 6;
+}
+
+.b_r_angle {
+  background-image: url(../img/bottom_right_angle.png);
+  width: 21px;
+  height: 33px;
+  position: absolute;
+  right: -3px;
+  bottom: -23px;
+  z-index: 3;
+}
+
+.bottom_bd {
+  background-image: url(../img/bottom_bd.png);
+  background-repeat: repeat-x;
+  height: 17px;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+}
+
+.bottom_lepn {
+  background-image: url(../img/top_lepn.png);
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  margin-left: -36px;
+  z-index: 5;
+}
+
+.top_mnu {
+  height: 147px;
+}
+
+.left_icons {
+  margin: 36px 270px 0 115px;
+  float: left;
+}
+
+.left_icons img:nth-child(2) {
+  margin-left: 32px;
+  margin-top: -16px;
+}
+
+.left_icons button {
+  background-image: url(../img/btn_fb_1.png);
+  width: 141px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  margin: -1px 0 0 32px;
+  padding: 11px;
+}
+
+.left_icons button:active {
+  background-position: 1px 1px;
+}
+
+.logo_center {
+  position: absolute;
+  left: 50%;
+  margin-left: -88px;
+  top: 18px;
+  width: 178px;
+  height: 116px;
+  background-image: url(../img/logo_center.png);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.right_icons {
+  margin-top: 36px;
+}
+
+.right_icons button:nth-child(1) {
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/btn_rss_1.png);
+  border: none;
+  background-color: transparent;
+}
+
+.right_icons button:nth-child(1):active {
+  background-position: 1px 1px;
+}
+
+.right_icons button:nth-child(2) {
+  width: 168px;
+  height: 35px;
+  background-image: url(../img/btn_login_1.png);
+  border: none;
+  background-color: transparent;
+  margin-left: 40px;
+}
+
+.right_icons button:nth-child(2):active {
+  background-position: 1px 1px;
+}
+
+.right_icons button:nth-child(3) {
+  width: 59px;
+  height: 35px;
+  background-image: url(../img/btn_lang_1.png);
+  border: none;
+  background-color: transparent;
+  margin-left: 29px;
+}
+
+.right_icons button:nth-child(3):active {
+  background-position: 1px 1px;
+}
+
+.main_mnu {
+  width: 100%;
+  height: 73px;
+  background-image: url(../img/mnu_bg.png);
+  position: relative;
+  z-index: 1;
+  margin-top: -27px;
+}
+
+nav ul {
+  margin-left: 20px;
+}
+
+nav ul img {
+  margin-left: 57px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-family: "PFDinDisplayPro-Light", sans-serif;
+  font-size: 14px;
+  letter-spacing: -1px;
+  margin: 4px 0 0 65px;
+  cursor: pointer;
+}
+
+nav ul li.active {
+  background-image: url(../img/mnu_bg_active.png);
+  background-repeat: repeat-x;
+}
+
+nav ul li:hover {
+  background-image: url(../img/mnu_bg_active.png);
+  background-repeat: repeat-x;
+}
+
+nav ul li a {
+  color: #4b3722;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #7a5c3c;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+  color: #664c31;
+}
+
+.mnu_icon {
+  width: 10px;
+  height: 20px;
+  background-image: url(../img/mnu_icon.png);
+  display: inline-block;
+  position: absolute;
+  top: 26px;
+  margin-left: 27px;
+}
+
+.about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Georgia", sans-serif;
+  color: #585858;
+}
+
+.about p {
+  font-family: "Georgia", sans-serif;
+  margin: -10px 125px	20px 125px;
+  font-size: 14px;
+}
+
+.about img {
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.partners {
+  width: 100%;
+  height: 133px;
+  margin-left: 90px;
+}
+
+.partners img {
+  display: inline-block;
+  margin: 0 0 20px 30px;
+}
+
+footer p.copir {
+  font-size: 11px;
+  font-family: "Georgia", sans-serif;
+  margin: 20px 0 20px 125px;
+}
+
+footer p {
+  font-size: 11px;
+  font-family: "Georgia", sans-serif;
+  margin: 20px 0 20px 0;
+}
